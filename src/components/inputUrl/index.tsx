@@ -12,7 +12,7 @@ export const TextInput: React.FC = () => {
     }
 
     function handleClick() {
-        fetch('http://localhost:8000/add', {
+        fetch('https://babulink.herokuapp.com/add', {
             method: 'POST',
             headers: {
               'Accept': 'application/json',
@@ -42,7 +42,7 @@ export const TextInput: React.FC = () => {
                         </>
                     ) : (
                         <>
-                          <label>{`http://localhost/${result}`}</label>
+                          <label>{`https://babulink.herokuapp.com/${result}`}</label>
                           <button className="button" type="button">Copiar</button>
                         </>
                     )

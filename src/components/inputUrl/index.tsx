@@ -38,7 +38,7 @@ export const TextInput: React.FC = () => {
                         <>
                             <div className="title">
                                 <h1>Babulink</h1>
-                                <p>Diga adeus para urls grandes, encurte gratuiamente no campo abaixo.</p>
+                                <p>Diga adeus para urls grandes, encurte gratuitamente no campo abaixo.</p>
                             </div>
                             <form onSubmit={handleClick}>
                                 <input className="input" placeholder="Digite a url" onChange={handleChange} />  

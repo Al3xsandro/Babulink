@@ -6,7 +6,9 @@ const cors = require('cors')
 const index = require('./routes/index');
 const babuRoutes = require('./routes/babuRoutes');
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://jolly-boyd-2681a0.netlify.app/'
+}))
 app.use(express.json({ extended: true }))
 
 app.use(index)

@@ -24,11 +24,11 @@ export const Form = styled.form`
     label {
         background: #ffff;
         border-radius: 10px;
-        padding: 10px;
+        padding: 15px;
 
         text-align: center;
         font-family: Roboto, sans-serif;
-        font-size: 14px;
+        font-size: 11px;
         margin: 2px;
         color: rgb(80, 56, 190);
         font-weight: 400;

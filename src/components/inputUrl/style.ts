@@ -28,7 +28,7 @@ export const Form = styled.form`
 
         text-align: center;
         font-family: Roboto, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         margin: 2px;
         color: rgb(80, 56, 190);
         font-weight: 400;

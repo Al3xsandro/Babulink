@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Form } from './style';
+import { Container, Section } from './style';
 
 export const TextInput: React.FC = () => {
     const [value, setValue] = useState('')
@@ -8,7 +8,7 @@ export const TextInput: React.FC = () => {
     const [active, setActive] = useState(false)
 
     const handleChange = (event) => {
-        setValue(event.target.value)
+        return setValue(event.target.value)
     }
 
     function handleClick() {
@@ -23,32 +23,39 @@ export const TextInput: React.FC = () => {
         .then((response) => response.json())
         .then((response) => {
             setResult(response.data)
-            console.log(response.data)
             setActive(true)
         })
-    }
 
+        .catch((err) => {
+            console.log(err)
+        })
+    }
     return (
         <Container>
-            <div>
-                <img className="logo" src="/img/desktop.svg" alt="desktop"/>
-            </div>
-            <Form>
+            <Section>
                 {
                     !active ? ( 
                         <>
-                            <input className="input" placeholder="Digite a url" onChange={handleChange} />  
-                            <button className="button" type="button" onClick={handleClick}>Encurtar</button>
+                            <div className="title">
+                                <h1>Babulink</h1>
+                                <p>Diga adeus para urls grandes, encurte gratuiamente no campo abaixo.</p>
+                            </div>
+                            <form onSubmit={handleClick}>
+                                <input className="input" placeholder="Digite a url" onChange={handleChange} />  
+                                <button className="button" type="button" onClick={handleClick}>Encurtar</button>
+                            </form>
                         </>
                     ) : (
-                        <>
+                        <div className="result">
+                          <h1>Babulink</h1>
+
                           <label>{`https://babulink.herokuapp.com/${result}`}</label>
-                          <button className="button" type="button">Copiar</button>
-                        </>
+                          <button className="copyButton" type="button">Copiar</button>
+                        </div>
                     )
 
                 }
-            </Form>
+            </Section>
         </Container>
     )
 }

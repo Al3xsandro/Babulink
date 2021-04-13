@@ -44,12 +44,18 @@ export const TextInput: React.FC = () => {
                 {
                     !active ? ( 
                         <>
-<<<<<<< HEAD
                             { !error ? (
+                                <>
                                 <div className="title">
                                     <h1>Babulink</h1>
                                     <p>Diga adeus para urls grandes, encurte gratuitamente no campo abaixo.</p>
-                                </div> ) : (
+                                </div> 
+                                <form onSubmit={handleClick}>
+                                    <input className="input" placeholder="Digite a url" onChange={handleChange} />  
+                                    <button className="button" type="button" onClick={handleClick}>Encurtar</button>
+                                </form>
+                                </>
+                            ) : (
                                     <>
                                         <div className="title">
                                             <h1>Babulink</h1>
@@ -57,17 +63,7 @@ export const TextInput: React.FC = () => {
                                         </div>
                                     </>
                                 )
-                            }   
-=======
-                            <div className="title">
-                                <h1>Babulink</h1>
-                                <p>Diga adeus para urls grandes, encurte gratuitamente no campo abaixo.</p>
-                            </div>
->>>>>>> 4e2c701eb39de891e25b2dac40d07053ed090f39
-                            <form onSubmit={handleClick}>
-                                <input className="input" placeholder="Digite a url" onChange={handleChange} />  
-                                <button className="button" type="button" onClick={handleClick}>Encurtar</button>
-                            </form>
+                            }    
                         </>
                     ) : (
                         <>

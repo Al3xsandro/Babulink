@@ -17,7 +17,7 @@
   </div>
 
 <h3>Imagens</h3>
-<img src="![logo](https://user-images.githubusercontent.com/63478331/114485970-3f7d7480-9be3-11eb-921b-492429ef3c81.png)" width="440px" alt="logo">  
+<img src="https://user-images.githubusercontent.com/63478331/114485970-3f7d7480-9be3-11eb-921b-492429ef3c81.png" width="440px" alt="logo">  
 
  <h3>Configurando o React</h3>
  

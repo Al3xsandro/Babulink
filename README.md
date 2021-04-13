@@ -7,7 +7,6 @@
 
 ---
   ✪ Olá, o babulink foi desenvolvido com a proposta de resolver um desafio de um amigo e está totalmente livre para uso. ✪
-  deploy: <a href="https://jolly-boyd-2681a0.netlify.app/">https://jolly-boyd-2681a0.netlify.app/</a>
   
   <h3> Como usar:</h2>
   <p>Em seu navegador após fazer o setup do projeto, use "localhost:{porta configurada por você}/" para a página inicial.</p>
@@ -16,6 +15,9 @@
   <li>Criar url: "localhost:porta/"</li>
   <li>Histórico de urls encurtadas: "localhost:porta/history"</li>
   </div>
+  
+<h3>Demo</h3>
+<a href="https://jolly-boyd-2681a0.netlify.app/">https://jolly-boyd-2681a0.netlify.app/</a>
 
 <h3>Imagens</h3>
 <img src="https://user-images.githubusercontent.com/63478331/114485970-3f7d7480-9be3-11eb-921b-492429ef3c81.png" width="440px" alt="logo">  

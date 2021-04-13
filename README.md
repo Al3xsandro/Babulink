@@ -28,5 +28,5 @@
  
  <h6>você também pode utilizar o npm caso não use o yarn em sua maquina.</h6>
  
- <h3>Agora você vai precisar configurar o servidor backend, entre na branch backend e veja o passo a passo da instalação<h3>
+ <p>Agora você vai precisar configurar o servidor backend, entre na branch backend e veja o passo a passo da instalação</p>
  </div>

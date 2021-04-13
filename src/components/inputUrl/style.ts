@@ -14,7 +14,7 @@ export const Section = styled.section`
 
     background: #fff;
     border-radius: 10px;
-    padding: 100px;
+    padding: 90px;
 
     .title {
         h1 {
@@ -31,6 +31,8 @@ export const Section = styled.section`
             font-weight: 300;
             font-size: 18px;
             font-family: Roboto, sans-serif;
+
+            padding: 10px;
         }
     }
 
@@ -42,10 +44,9 @@ export const Section = styled.section`
 
         input {
             padding: 20px;
-            border-radius: 20px;
             
             max-width: 20rem;
-            min-height: 4rem;
+            min-height: 0.4rem;
 
             background-color: #fff;
             border-radius: 4px;
@@ -54,8 +55,8 @@ export const Section = styled.section`
         }
 
         button {
-            margin: 4px;
-            padding: 22.5px;
+            margin: 7px;
+            padding: 1.2rem;
 
             background-color: #fff;
             border-radius: 4px;
@@ -105,7 +106,7 @@ export const Section = styled.section`
         } 
 
         .copyButton {
-            margin: 4px;
+            margin: 8px;
             padding: 22.5px;
 
             background-color: #fff;
@@ -127,6 +128,13 @@ export const Section = styled.section`
         background: #fff;
         padding: 20px;
 
+        .title {
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
         form, .result {
             display: flex;
             justify-content: center;
@@ -134,9 +142,37 @@ export const Section = styled.section`
 
             button, .copyButton {
                 margin: 10px;
-                padding: 15px;
-                max-width: 220px;
+                padding: 1rem;
+                width: 13.8rem;
+                max-height: 14rem;
             }
         }
     }
+
+    .popup {
+    position: fixed;
+    bottom:10px;
+    left: 1px;
+    margin: 20px;
+
+    p {
+      background-color: #1f73b7;
+      color: #fff;
+      
+      padding: 10px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: Roboto, sans-serif;
+      fill: #fff;
+      border-radius: 21px;
+      border: none;
+    }
+  }
+  @media(max-width: 768px){
+    .popup {
+      top: 420px;
+      padding: 10px;
+      border-radius: 10;
+    }
+  }
 `;

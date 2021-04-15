@@ -17,7 +17,7 @@
   </div>
   
 <h3>Demo</h3>
-<a href="https://jolly-boyd-2681a0.netlify.app/">https://jolly-boyd-2681a0.netlify.app/</a>
+<a href="https://babulink.netlify.app">https://babulink.netlify.app</a>
 
 <h3>Imagens</h3>
 <img src="https://user-images.githubusercontent.com/63478331/114485970-3f7d7480-9be3-11eb-921b-492429ef3c81.png" width="440px" alt="logo">  

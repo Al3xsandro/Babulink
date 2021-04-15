@@ -15,9 +15,12 @@
   <li>Criar url: "localhost:porta/"</li>
   <li>Histórico de urls encurtadas: "localhost:porta/history"</li>
   </div>
+  
+<h3>Demo</h3>
+<a href="https://jolly-boyd-2681a0.netlify.app/">https://jolly-boyd-2681a0.netlify.app/</a>
 
 <h3>Imagens</h3>
-<img src="https://cdn.discordapp.com/attachments/734097146420265013/831346715021541386/unknown.png" width="400px" alt="logo">  
+<img src="https://user-images.githubusercontent.com/63478331/114485970-3f7d7480-9be3-11eb-921b-492429ef3c81.png" width="440px" alt="logo">  
 
  <h3>Configurando o React</h3>
  
@@ -28,5 +31,5 @@
  
  <h6>você também pode utilizar o npm caso não use o yarn em sua maquina.</h6>
  
- <h3>Agora você vai precisar configurar o servidor backend, entre na branch backend e veja o passo a passo da instalação<h3>
+ <p>Agora você vai precisar configurar o servidor backend, entre na branch backend e veja o passo a passo da instalação</p>
  </div>

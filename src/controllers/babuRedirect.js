@@ -1,4 +1,5 @@
-const client = require('../config/database')
+const client = require('../config/database');
+const valid = require('valid-url');
 
 exports.get = (req, res) => {
     client.query(`SELECT url FROM babulink WHERE short_url=$1`, [req.params.short_id], (err, data) => {
@@ -8,6 +9,12 @@ exports.get = (req, res) => {
             return res.status(404).send({data: 'This url not exists'})
         }
 
-        return res.status(302).redirect(data.rows[0].url) 
+        const url = data.rows[0].url
+
+        if (!valid.isUri(url)){
+            return res.redirect(302, 'https://' + url)
+        }
+
+        return res.redirect(302, redirect)
     })
 }

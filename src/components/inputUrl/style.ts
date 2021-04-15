@@ -10,19 +10,15 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
     margin: 20px;
-
-
     background: #fff;
     border-radius: 10px;
     padding: 90px;
-
     .title {
         h1 {
             font-family: Roboto, sans-serif;
             font-weight: 700;
             font-size: 35px;
             margin: 18px;
-
             text-align: center;
             color: rgb(69, 75, 217);
         }
@@ -31,64 +27,52 @@ export const Section = styled.section`
             font-weight: 300;
             font-size: 18px;
             font-family: Roboto, sans-serif;
-
             padding: 10px;
         }
     }
-
     form {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 20px;
-
         input {
             padding: 20px;
             
             max-width: 20rem;
             min-height: 0.4rem;
-
             background-color: #fff;
             border-radius: 4px;
             border: 1px solid #ccc;
             outline: none;
         }
-
         button {
             margin: 7px;
             padding: 1.2rem;
-
             background-color: #fff;
             border-radius: 4px;
             border: 1px solid #ccc;
             background-color: blue;
             outline: none;
-
             color: #fff;
             opacity: 0.7;
-
             &:hover {
                 opacity: 0.6;
             }
         }
     }
-
     .result {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 20px;
-
         h1 {
             font-family: Roboto, sans-serif;
             font-weight: 700;
             font-size: 35px;
             margin: 18px;
-
             text-align: center;
             color: rgb(69, 75, 217);
         }
-
         label {
             padding: 20px;
             border-radius: 20px;
@@ -96,7 +80,6 @@ export const Section = styled.section`
             font-size: 14px;
             font-family: Roboto, sans-serif;
             font-weight: 400;
-
             max-width: 20rem;
             min-height: 4rem;
             
@@ -104,42 +87,34 @@ export const Section = styled.section`
             border-radius: 4px;
             border: 1px solid #ccc;
         } 
-
         .copyButton {
             margin: 8px;
             padding: 22.5px;
-
             background-color: #fff;
             border-radius: 4px;
             border: 1px solid #ccc;
             background-color: blue;
             outline: none;
-
             color: #fff;
             opacity: 0.7;
-
             &:hover {
                 opacity: 0.6;
             }
         }
     }
-
     @media(max-width: 768px){
         background: #fff;
         padding: 20px;
-
         .title {
             p {
                 font-size: 14px;
                 text-align: center;
             }
         }
-
         form, .result {
             display: flex;
             justify-content: center;
             flex-direction: column;
-
             button, .copyButton {
                 margin: 10px;
                 padding: 1rem;
@@ -148,13 +123,11 @@ export const Section = styled.section`
             }
         }
     }
-
     .popup {
     position: fixed;
     bottom:10px;
     left: 1px;
     margin: 20px;
-
     p {
       background-color: #1f73b7;
       color: #fff;

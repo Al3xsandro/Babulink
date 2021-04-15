@@ -15,7 +15,7 @@ export const HeaderMenu: React.FC = () => {
                 <ul>
                     <li>
                         <a href="/"><HomeIcon style={{fontSize: '16'}}/> Inicio</a>
-                        <a href="/"><HistoryIcon style={{fontSize: '16'}}/> Histórico</a>
+                        <a href="/history"><HistoryIcon style={{fontSize: '16'}}/> Histórico</a>
                     </li>
                 </ul>
             </nav>

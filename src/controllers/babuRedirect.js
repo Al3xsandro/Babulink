@@ -13,8 +13,8 @@ exports.get = (req, res) => {
 
         if (!valid.isUri(url)){
             return res.redirect(302, 'https://' + url)
+        } else {
+            return res.redirect(302, url)
         }
-
-        return res.redirect(302, redirect)
     })
 }

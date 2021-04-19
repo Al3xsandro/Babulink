@@ -13,7 +13,6 @@ export const Section = styled.section`
     background: #fff;
     border-radius: 10px;
     padding: 90px;
-
     .title {
         h1 {
             font-family: Roboto, sans-serif;

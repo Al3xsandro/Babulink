@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Container, Section } from './style';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+import { api } from '../../services/api';
+
 export const TextInput: React.FC = () => {
     const [value, setValue] = useState('')
     const [result, setResult] = useState('')
@@ -22,22 +24,26 @@ export const TextInput: React.FC = () => {
         )
     }
 
-    function handleClick() {
-        fetch('https://babulink.herokuapp.com/add', {
-            method: 'POST',
+    async function handleClick() {
+        const options = { 
             headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ "url": !value ? setError(true) : value })
-        })
-        .then((response) => response.json())
-        .then((response) => {
-            setResult(response.data)
-            setActive(true)
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }
+
+        await api.post('/add', {
+            url: !value ? setError(true) : value,
+            options
         })
 
-        .catch((err) => {})
+        .then(response => {
+            const data = response.data.data
+            return (
+            setResult(data),
+            setActive(true)
+            )
+        })
     }
     return (
         <Container>

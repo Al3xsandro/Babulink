@@ -4,24 +4,28 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import { api } from '../../services/api';
 
+type Event = {
+    target: { value: React.SetStateAction<string>; }
+}
+
 export const TextInput: React.FC = () => {
+    const url = process.env.REACT_APP_URL
+
     const [value, setValue] = useState('')
     const [result, setResult] = useState('')
-    const copy = `https://babulink.herokuapp.com/${result}`
+    const copy = url + `${result}`
 
     const [active, setActive] = useState(false)
     const [isCopy, setIsCopy] = useState(false)
     const [error, setError] = useState(false)
 
-    const handleChange = (event) => {
-        return setValue(event.target.value)
+    const handleChange = (e: Event) => {
+        setValue(e.target.value)
     }
     
     function handleCopy() {
-        return (
-            setIsCopy(true),
-            localStorage.setItem('url', copy)
-        )
+        setIsCopy(true)
+        localStorage.setItem('url', copy)
     }
 
     async function handleClick() {

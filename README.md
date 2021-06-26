@@ -13,7 +13,7 @@
    - Postgres
    - React
 
-  <h3>⚡ Como usar:</h2>
+  <h3>⚡ Como usar</h2>
    - Em seu navegador após fazer o setup do projeto, use "localhost:{porta configurada por você}/" para a página inicial.
   
   <h4>:rocket: Rotas</h4>
